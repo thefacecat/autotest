@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Excel-Driver接口自动化</th></tr>
+<tr><td><a href="#t0">Demo</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">2,954</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Excel-Driver接口自动化</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Demo &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.datacvg.cases.TestExcelWithDataProvider</td><td><a href="#m0">testSearch</a></td><td rowspan="4">1597028087125</td><td rowspan="4">57</td></tr><tr class="failedeven"><td><a href="#m1">testSearch</a></td></tr><tr class="failedeven"><td><a href="#m2">testSearch</a></td></tr><tr class="failedeven"><td><a href="#m3">testSearch</a></td></tr><tr><th colspan="4">Demo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.datacvg.cases.TestExcelWithDataProvider</td><td><a href="#m4">testSearch</a></td><td rowspan="3">1597028084521</td><td rowspan="3">2310</td></tr><tr class="passedeven"><td><a href="#m5">testSearch</a></td></tr><tr class="passedeven"><td><a href="#m6">testSearch</a></td></tr></tbody>
+</table>
+<h2>Demo</h2><h3 id="m0">com.datacvg.cases.TestExcelWithDataProvider#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>测试4执行某某操作444444</td><td>POST</td><td>http://192.168.2.76:9108</td><td>/api/datacvg/user/login</td><td>application/json</td><td>r2</td><td>e1</td><td>N</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">java.lang.AssertionError: expected [true] but found []
+	at com.datacvg.utils.RequestUtils.allPost(RequestUtils.java:76)
+	at com.datacvg.utils.RequestUtils.httpRequest(RequestUtils.java:30)
+	at com.datacvg.cases.TestExcelWithDataProvider.testSearch(TestExcelWithDataProvider.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.datacvg.cases.TestExcelWithDataProvider#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>数据治理项目登录请求2</td><td>GET</td><td>http://192.168.2.76:9108</td><td>/api/datacvg/user/login</td><td>application/json</td><td>{&quot;loginName&quot;:&quot;admin78&quot;,&quot;passWord&quot;:&quot;123457&quot;}</td><td>true</td><td>NO</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">java.lang.IllegalArgumentException: Illegal character in query at index 48: http://192.168.2.76:9108/api/datacvg/user/login?{&quot;loginName&quot;:&quot;admin78&quot;,&quot;passWord&quot;:&quot;123457&quot;}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.datacvg.utils.RequestUtils.allGet(RequestUtils.java:96)
+	at com.datacvg.utils.RequestUtils.httpRequest(RequestUtils.java:32)
+	at com.datacvg.cases.TestExcelWithDataProvider.testSearch(TestExcelWithDataProvider.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 48: http://192.168.2.76:9108/api/datacvg/user/login?{&quot;loginName&quot;:&quot;admin78&quot;,&quot;passWord&quot;:&quot;123457&quot;}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 41 more
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.datacvg.cases.TestExcelWithDataProvider#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>主数据查询</td><td>GET</td><td>http://192.168.2.76:9108</td><td>/api/api/menu/all</td><td>application/json</td><td></td><td>2000</td><td>NO</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">java.lang.AssertionError: expected [true] but found []
+	at com.datacvg.utils.RequestUtils.allGet(RequestUtils.java:127)
+	at com.datacvg.utils.RequestUtils.httpRequest(RequestUtils.java:32)
+	at com.datacvg.cases.TestExcelWithDataProvider.testSearch(TestExcelWithDataProvider.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.datacvg.cases.TestExcelWithDataProvider#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>测试3执行某某操作33333</td><td>POST</td><td>http://192.168.2.76:9108</td><td>/api/datacvg/user/login</td><td>application/json</td><td>r2</td><td>e1</td><td>N</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">java.lang.AssertionError: expected [true] but found []
+	at com.datacvg.utils.RequestUtils.allPost(RequestUtils.java:76)
+	at com.datacvg.utils.RequestUtils.httpRequest(RequestUtils.java:30)
+	at com.datacvg.cases.TestExcelWithDataProvider.testSearch(TestExcelWithDataProvider.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.datacvg.cases.TestExcelWithDataProvider#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>数据治理项目登录请求1</td><td>POST</td><td>http://192.168.2.76:9108</td><td>/api/datacvg/user/login</td><td>application/json</td><td>{&quot;loginName&quot;:&quot;admin78&quot;,&quot;passWord&quot;:&quot;123456&quot;}</td><td>true</td><td>NO</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.datacvg.cases.TestExcelWithDataProvider#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>数据治理项目登录请求1</td><td>POST</td><td>http://192.168.2.76:9108</td><td>/api/datacvg/user/login</td><td>application/json</td><td>{&quot;loginName&quot;:&quot;admin78&quot;,&quot;passWord&quot;:&quot;123456&quot;}</td><td>true</td><td>YES</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.datacvg.cases.TestExcelWithDataProvider#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>主数据查询</td><td>GET</td><td>http://192.168.2.76:9108</td><td>/api/api/menu/all</td><td>application/json</td><td></td><td>2000</td><td>YES</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

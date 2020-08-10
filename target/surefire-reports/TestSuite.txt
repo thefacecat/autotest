@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 7.042 sec <<< FAILURE!
+testSearch(com.datacvg.cases.TestExcelWithDataProvider)  Time elapsed: 0.037 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.datacvg.utils.RequestUtils.allGet(RequestUtils.java:127)
+	at com.datacvg.utils.RequestUtils.httpRequest(RequestUtils.java:32)
+	at com.datacvg.cases.TestExcelWithDataProvider.testSearch(TestExcelWithDataProvider.java:90)
+
+testSearch(com.datacvg.cases.TestExcelWithDataProvider)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Illegal character in query at index 48: http://192.168.2.76:9108/api/datacvg/user/login?{"loginName":"admin78","passWord":"123457"}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:69)
+	at com.datacvg.utils.RequestUtils.allGet(RequestUtils.java:96)
+	at com.datacvg.utils.RequestUtils.httpRequest(RequestUtils.java:32)
+	at com.datacvg.cases.TestExcelWithDataProvider.testSearch(TestExcelWithDataProvider.java:90)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 48: http://192.168.2.76:9108/api/datacvg/user/login?{"loginName":"admin78","passWord":"123457"}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 41 more
+
+testSearch(com.datacvg.cases.TestExcelWithDataProvider)  Time elapsed: 0.026 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.datacvg.utils.RequestUtils.allPost(RequestUtils.java:76)
+	at com.datacvg.utils.RequestUtils.httpRequest(RequestUtils.java:30)
+	at com.datacvg.cases.TestExcelWithDataProvider.testSearch(TestExcelWithDataProvider.java:90)
+
+testSearch(com.datacvg.cases.TestExcelWithDataProvider)  Time elapsed: 0.061 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.datacvg.utils.RequestUtils.allPost(RequestUtils.java:76)
+	at com.datacvg.utils.RequestUtils.httpRequest(RequestUtils.java:30)
+	at com.datacvg.cases.TestExcelWithDataProvider.testSearch(TestExcelWithDataProvider.java:90)
+

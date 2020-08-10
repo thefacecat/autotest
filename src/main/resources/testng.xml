@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Excel-Driver接口自动化">
+
+    <test name="Demo">
+        <classes>
+
+            <class name="com.datacvg.cases.TestExcelWithDataProvider">
+                <methods>
+                    <include name="testSearch"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.datacvg.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

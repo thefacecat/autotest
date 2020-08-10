@@ -1,0 +1,12 @@
+com\datacvg\cases\TestNGRun.class
+com\datacvg\config\Config.class
+com\datacvg\service\serviceImpl\WriterConfigImpl.class
+com\datacvg\config\ExtentTestNGIReporterListener$1.class
+com\datacvg\service\WriterConfig.class
+com\datacvg\config\ExtentTestNGIReporterListener.class
+com\datacvg\utils\RequestUtils.class
+com\datacvg\service\serviceImpl\ReaderConfigImpl.class
+com\datacvg\service\ReaderConfig.class
+com\datacvg\config\RequestParams.class
+com\datacvg\utils\FileUtils.class
+com\datacvg\cases\TestExcelWithDataProvider.class
