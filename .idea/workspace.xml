@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="77a60f5a-57ec-4e8c-81f8-b40a0b3b1f96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auth.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auth.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/exceldriver.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
+              <caret column="45" lean-forward="true" selection-start-column="45" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -168,6 +169,44 @@
               <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
               <item name="WorkProject" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datacvg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkProject" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -283,7 +322,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596948428882</updated>
-      <workItem from="1596948432195" duration="18306000" />
+      <workItem from="1596948432195" duration="19992000" />
     </task>
     <task id="LOCAL-00001" summary="整合自動化測試框架">
       <created>1597035851072</created>
@@ -292,13 +331,17 @@
       <option name="project" value="LOCAL" />
       <updated>1597035851072</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="整合自動化測試框架">
+      <created>1597037393165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597037393165</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="F__WorkProject_src_main_resources_testng_xml - 2020.08.09 at 17h 03m 36s.xml">
-      <configuration name="F:/WorkProject/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="F__WorkProject_src_main_resources_testng_xml - 2020.08.09 at 17h 04m 46s.xml">
       <configuration name="F:/WorkProject/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -326,20 +369,22 @@
     <history-entry file="F__WorkProject_src_main_resources_testng_xml - 2020.08.10 at 12h 49m 27s.xml">
       <configuration name="F:/WorkProject/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="F__WorkProject_src_main_resources_testng_xml - 2020.08.10 at 13h 44m 56s.xml">
+      <configuration name="F:/WorkProject/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18306000" />
+    <option name="totallyTimeSpent" value="19992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -349,7 +394,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34844193" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34844193" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,7 +598,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/exceldriver.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+          <caret column="45" lean-forward="true" selection-start-column="45" selection-end-column="45" />
         </state>
       </provider>
     </entry>
