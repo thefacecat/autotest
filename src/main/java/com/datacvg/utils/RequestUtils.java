@@ -47,13 +47,17 @@ public class RequestUtils {
      */
     public static void allPost(HttpClient httpClient, String type, String url, String path,
                                String contentType, String request, String expect, String isLoggin){
+        //判断接口是否执行成功
         String flag = "";
+        //判断是否需要重写参数
+        String isWrite = "yes";
         HttpPost httpPost = new HttpPost(url+path);
         if(isLoggin.contains("Yes")||isLoggin.contains("YES")||isLoggin.contains("yes")||isLoggin.contains("True")||isLoggin.contains("true")){
             //根据系统实际情况进行调整
             ReaderConfigImpl rc = new ReaderConfigImpl();
             httpPost.setHeader("userId",rc.reader("userId"));
             httpPost.setHeader("token",rc.reader("token"));
+            isWrite = "no";
         }
         httpPost.setHeader("Content-Type",contentType);
         StringEntity entity = new StringEntity(request.toString(),"utf-8");
@@ -65,7 +69,7 @@ public class RequestUtils {
                 flag = "true";
             }
 
-            if(flag.equals("true")){
+            if(isWrite.equals("yes")){
                 writeParameter(res);
             }
 
@@ -90,6 +94,7 @@ public class RequestUtils {
      */
     public static void allGet(HttpClient httpClient, String type, String url, String path,
                               String contentType, String request, String expect, String isLoggin){
+        //
         String flag = "";
         HttpGet httpGet;
         if(request.length()!=0){

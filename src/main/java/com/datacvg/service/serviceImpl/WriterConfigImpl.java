@@ -18,7 +18,6 @@ public class WriterConfigImpl implements WriterConfig {
                 //如果存在文件，且包含填写key，则删除文件，重新新建文件写入
                 BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
                 String rl;
-                ;
                 while ((rl = bufferedReader.readLine()) != null) {
                     if (rl.contains(key)) {
                         bufferedReader.close();

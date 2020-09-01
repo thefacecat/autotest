@@ -40,6 +40,7 @@ public class TestExcelWithDataProvider {
             if (sheet == null)
                 return null;
             int rows = sheet.getRows();
+
             int cols = sheet.getColumns();
             if (rowOffset == 0) {
                 rowOffset = rows - beginRowNum;
@@ -76,16 +77,14 @@ public class TestExcelWithDataProvider {
     @DataProvider(name = "getData")
     public static Object[][] getData() throws IOException {
         FileUtils.getFilePath();
-        //读取dataFile文件内容，从第二行开始读取 "f:\\ex\\ExcelCases.xls" Config.filepath
+        //读取dataFile文件内容，从第二行开始读取 "f:\\ex\\ExcelCasesDemo.xls" Config.filepath
         return readData(Config.filepath, "Sheet1", 1, 0, 0, 0);
     }
 
     // 测试案例绑定DataProvider后自动循环执行
     @Test(dataProvider = "getData")
-    public void testSearch(String titleName,String type,String url,String path,
+    public void testSearch(String no,String titleName,String type,String url,String path,
                            String contentType,String request,String expect,String isLoggin) {
-//        System.out.println(type+" " + titleName+" "+url+ " "+path+" "+
-//                contentType+" "+request+" "+expect+" "+isLoggin);
         //调用请求类方法
         RequestUtils.httpRequest(type, url, path, contentType, request, expect, isLoggin);
     }
